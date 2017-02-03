@@ -24,7 +24,7 @@ router.get('/hello', (req, res) => {
 });
 
 router.post('/api/face', (req, res) => {
-    socketComn.send(wss, req.body);
+    socketComn.send(wss, JSON.stringify(req.body));
     res.end();
 });
 
