@@ -4,16 +4,23 @@
     <meta charset="utf-8">
     <meta charset="UTF-8">
     <script src="js/bundle.js"></script>
-    <title>pjsnow</title>
+    <title>KAMEN LIGHT</title>
     <style>
                 body {
                     margin:0;
                 }
+                html, body { height: 100%; }
+
+                /*
                 .bg_checkbox li {
                     position: relative;
                     display: inline-block;
                     margin: 0 32px 0 0;
                     padding: 0;
+                }
+
+                .bg_checkbox label {
+             display:none;
                 }
 
                 .bg_checkbox input {
@@ -43,23 +50,62 @@
                     ミッキーの耳
                     パンダ http://sozaikoujou.com/19140
                 */
-
-                .bg_checkbox_1 input[type="checkbox"] + label {
-                    background-image: url(images/animalface_saru.png);
-                }
-
-                .bg_checkbox_1 input[type="checkbox"]:checked + label {
-                    background-image: url(images/gatag-00002718.jpg);
-                }
-
-                .bg_checkbox_2 input[type="checkbox"] + label {
-                    background-image: url(images/sunglasses.jpg);
-                }
-
-                .bg_checkbox_2 input[type="checkbox"]:checked + label {
-                    background-image: url(images/gatag-00002718.jpg);
+                .bg_checkbox_wrapper li {
+                    list-style: none;
+                    float:left;
 
                 }
+
+                .imageBox {
+                    position: relative;
+                }
+                .absolute {
+                    position: absolute;
+                    left:0;
+                    top:0;
+                }
+
+                input[type="checkbox"]{
+                    -webkit-appearance: none;
+                    position: relative;　　
+                    display: inline-block;
+                    width: 100px;
+                    height: 100px;
+                     background-size: contain;
+                }
+
+                  input[type="checkbox"]:checked:before {
+                      content: "";
+                      position: absolute;
+                      left: 0px;
+                      top: 0px;
+                      display: inline-block;
+                      width: 100px;
+                      height: 100px;
+                    background-size: 100px 100px;
+                  }
+
+                .bg_checkbox_1 input[type="checkbox"] {
+                    background-image: url(https://dummyimage.com/400x400/ccc/fff&text=panda);
+                }
+
+                .bg_checkbox_1 input[type="checkbox"]:checked {
+                    background-image: url(https://dummyimage.com/400x400/000/fff&text=panda);
+                }
+
+                .bg_checkbox_2 input[type="checkbox"] {
+                    background-image: url(https://dummyimage.com/400x400/ccc/fff&text=saru);
+                }
+
+                .bg_checkbox_2 input[type="checkbox"]:checked {
+                    background-image: url(https://dummyimage.com/400x400/000/fff&text=saru);
+                }
+
+        .imageBox img{
+            margin-top:30px;
+            height: auto;
+            width:100%;
+        }
     </style>
 
     <script src="/js/jquery-3.1.1.min.js"></script>
@@ -69,21 +115,24 @@
 
 <body>
 <div style="height:50px; width:100%; background: deepskyblue; box-sizing:border-box; text-align:center;">
-    <h1 style="color:#fff; position:inline; margin:0; font-weight:normal;">雪</h1>
+    <h1 style="color:#fff; position:inline; margin:0; font-weight:normal;">KAMEN LIGHIT</h1>
 </div>
-<div style="height:400px; width:60%; float:left;">
-    <img src="images/gatag-00002718.jpg" style="margin-top: 100px; margin-left:auto; margin-right: auto; position:relative" width="400" height="auto"/>
+<div style="height:100%; width:70%; float:left; background:#000;">
+    <div class="imageBox" style="height:auto; width:100%;">
+        <img class="absolute firstImage" src="images/lady.png" />
+
+    </div>
 </div>
-<div style="height:100%; width:40%;  float:right; border-left:1px solid #ccc;  box-sizing:border-box;">
+<div style="height:100%; width:30%;  float:right; border-left:1px solid #ccc; background:#fff; box-sizing:border-box;">
     <form id="form">
-        <ul class="bg_checkbox">
-            <li class="bg_checkbox_1"><input type="checkbox" name="image[]" value="image1" checked><label>画像1</label></li>
-            <li class="bg_checkbox_2"><input type="checkbox" name="image[]"><label>画像２</label></li>
-            <li class="bg_checkbox_1"><input type="checkbox" name="image[]"><label>画像３</label></li>
-            <li class="bg_checkbox_1"><input type="checkbox" name="image[]"><label>画像4</label></li>
-            <li class="bg_checkbox_1"><input type="checkbox" name="image[]"><label>画像２</label></li>
-            <li class="bg_checkbox_1"><input type="checkbox" name="image[]"><label>画像３</label></li>
-            <li class="bg_checkbox_1"><input type="checkbox" name="image[]"><label>画像4</label></li>
+        <ul class="bg_checkbox_wrapper">
+            <li class="bg_checkbox_1"><input type="checkbox" name="image[]" value="hige"></li>
+            <li class="bg_checkbox_2"><input type="checkbox" name="image[]" value="chonmage"></li>
+            <li class="bg_checkbox_1"><input type="checkbox" name="image[]" value="sunglasses"></li>
+            <li class="bg_checkbox_2"><input type="checkbox" name="image[]" value="2"></li>
+            <li class="bg_checkbox_1"><input type="checkbox" name="image[]" value="1"></li>
+            <li class="bg_checkbox_2"><input type="checkbox" name="image[]" value="2"></li>
+
         </ul>
     </form>
 </div>
