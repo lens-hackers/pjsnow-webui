@@ -9,7 +9,7 @@ const webpackStream = require('webpack-stream');
 gulp.task('build', (done) => {
     const clientJsDir = path.join(__dirname, "client/js");
     const jsConfig = {
-        output: { path: __dirname , filename: '[name].bundle.js' },
+        output: { path: __dirname , filename: 'bundle.js' },
         devtool: 'source-map'
     };
         
