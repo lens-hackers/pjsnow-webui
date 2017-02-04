@@ -15,5 +15,18 @@
   "bugs": {
     "url": "https://github.com/lens-hackers/pjsnow-webui/issues"
   },
-  "homepage": "https://github.com/lens-hackers/pjsnow-webui#readme"
+  "homepage": "https://github.com/lens-hackers/pjsnow-webui#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "websocket.io": "^0.2.1"
+  },
+  "devDependencies": {
+    "gulp": "git://github.com/gulpjs/gulp.git#4.0",
+    "gulp-develop-server": "^0.5.2",
+    "gulp-plumber": "^1.1.0",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^2.2.1",
+    "webpack-stream": "^3.2.0"
+  }
 }
