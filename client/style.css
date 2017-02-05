@@ -1,0 +1,153 @@
+body {
+    margin:0;
+}
+html, body { height: 100%; }
+
+
+.bg_checkbox_wrapper li {
+    list-style: none;
+    float:left;
+    margin:0 5px;
+
+}
+
+.imageBox {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    position: relative;　　
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+}
+
+input[type="checkbox"]:checked:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+}
+
+.bg_checkbox_chonmage input[type="checkbox"] {
+    background-image: url(/images/layer/chonmage.png);
+}
+
+.bg_checkbox_chonmage input[type="checkbox"]:checked {
+    background-image: url(/images/layer/chonmage.png);
+}
+
+.bg_checkbox_sunglasses input[type="checkbox"] {
+    background-image: url(/images/layer/sunglasses.png);
+}
+
+.bg_checkbox_sunglasses input[type="checkbox"]:checked {
+    background-image: url(/images/layer/sunglasses.png);
+}
+
+.bg_checkbox_dog_ear input[type="checkbox"] {
+    background-image: url(/images/layer/dog_ear.png);
+}
+
+.bg_checkbox_dog_ear input[type="checkbox"]:checked {
+    background-image: url(/images/layer/dog_ear.png);
+}
+
+.bg_checkbox_dog_nose input[type="checkbox"] {
+    background-image: url(/images/layer/dog_nose.png);
+}
+
+.bg_checkbox_dog_nose input[type="checkbox"]:checked {
+    background-image: url(/images/layer/dog_nose.png);
+}
+.bg_checkbox_higemegane input[type="checkbox"] {
+    background-image: url(/images/layer/higemegane.png);
+}
+
+.bg_checkbox_higemegane input[type="checkbox"]:checked {
+    background-image: url(/images/layer/higemegane.png);
+}
+
+.bg_checkbox_cheek input[type="checkbox"] {
+    background-image: url(/images/layer/cheek.png);
+}
+
+.bg_checkbox_cheek input[type="checkbox"]:checked {
+    background-image: url(/images/layer/cheek.png);
+}
+
+.bg_checkbox_kumatori input[type="checkbox"] {
+    background-image: url(/images/layer/kumatori.png);
+}
+
+.bg_checkbox_kumatori input[type="checkbox"]:checked {
+    background-image: url(/images/layer/kumatori.png);
+}
+
+
+.bg_checkbox_neko_hige input[type="checkbox"] {
+    background-image: url(/images/layer/neko_hige.png);
+}
+
+.bg_checkbox_neko_hige input[type="checkbox"]:checked {
+    background-image: url(/images/layer/neko_hige.png);
+}
+
+.bg_checkbox_neko_mimi input[type="checkbox"] {
+    background-image: url(/images/layer/neko_mimi.png);
+}
+
+.bg_checkbox_neko_mimi input[type="checkbox"]:checked {
+    background-image: url(/images/layer/neko_mimi.png);
+}
+
+
+.bg_checkbox_panda input[type="checkbox"] {
+    background-image: url(/images/layer/panda.png);
+}
+
+.bg_checkbox_panda input[type="checkbox"]:checked {
+    background-image: url(/images/layer/panda.png);
+}
+
+input[type="checkbox"]:checked::before{
+    /* 透過した黒を重ねる */
+    background-color: rgba(0,0,0,0.5);
+    /* どの範囲に重ねるかを指定 */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+}
+
+
+.imageBox img{
+    margin-top:30px;
+    height: auto;
+    width:100%;
+}
+
+
+
+/*用意するやつ
+      猿
+    サングラス https://www.silhouette-illust.com/illust/3712
+    ひげ　http://sozaikoujou.com/19150 http://sozaikoujou.com/19148
+    でかい目
+    くちばし
+    ミッキーの耳
+    パンダ http://sozaikoujou.com/19140
+*/

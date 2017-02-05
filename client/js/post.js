@@ -5,7 +5,7 @@ $(function() {
         var images = new Array();
         $("[name='image[]']:checked").each(function() {
             images.push(this.value);
-            $(".firstImage").after('<img class="absolute firstImage addedImage" src="images/' + this.value + '.png"/>');
+            $(".firstImage").after('<img class="absolute firstImage addedImage" src="images/layer/' + this.value + '.png"/>');
         });
         
         $.ajax({
