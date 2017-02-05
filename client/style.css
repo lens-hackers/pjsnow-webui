@@ -121,6 +121,14 @@ input[type="checkbox"]:checked:before {
     background-image: url(/images/layer/panda.png);
 }
 
+.bg_checkbox_hige input[type="checkbox"] {
+    background-image: url(/images/layer/hige.png);
+}
+
+.bg_checkbox_hige input[type="checkbox"]:checked {
+    background-image: url(/images/layer/hige.png);
+}
+
 input[type="checkbox"]:checked::before{
     /* 透過した黒を重ねる */
     background-color: rgba(0,0,0,0.5);
